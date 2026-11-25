@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 const links = [
   ['Gallery', '#gallery'],
   ['Services', '#services'],
+  ['Offers', '#offers'],
   ['Bridal inquiry', '#bridal'],
   ['Reviews', '#reviews'],
   ['Location & hours', '#location'],

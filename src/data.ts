@@ -43,15 +43,31 @@ export const serviceGroups = [
 
 export const allServices = [...new Set(serviceGroups.flatMap((group) => group.services))]
 
+const galleryImage = (filename: string) => `/images/gallery/${encodeURIComponent(filename).replace(/%26/gi, '&')}`
+
+export const salonImages = {
+  hero: galleryImage('cuts&curves hero_image.jpeg'),
+  bridal: galleryImage('bride work.jpeg'),
+  hairOffer: galleryImage('cuts&curves offer.jpeg'),
+  offer: galleryImage('discount.jpeg'),
+  skinOffer: galleryImage("mother's day skin offer.jpeg"),
+}
+
 export const galleryItems = [
-  { title: 'The bridal glow', category: 'Bridal', image: 'bridal-1.jpg', tone: 'rose' },
-  { title: 'Soft glam, all day', category: 'Makeup', image: 'makeup-1.jpg', tone: 'peach' },
-  { title: 'A little golden hour', category: 'Hair', image: 'hair-1.jpg', tone: 'sand' },
-  { title: 'A moment for the eyes', category: 'Bridal', image: 'bridal-2.jpg', tone: 'plum' },
-  { title: 'Healthy skin ritual', category: 'Skin & Nails', image: 'skin-1.jpg', tone: 'sage' },
-  { title: 'The finishing touch', category: 'Makeup', image: 'makeup-2.jpg', tone: 'berry' },
-  { title: 'Made for the aisle', category: 'Bridal', image: 'bridal-3.jpg', tone: 'gold' },
-  { title: 'Shine, your way', category: 'Hair', image: 'hair-2.jpg', tone: 'cocoa' },
+  { title: 'The bridal glow', category: 'Bridal', image: salonImages.bridal, tone: 'rose' },
+  { title: 'Soft glam, all day', category: 'Makeup', image: salonImages.bridal, tone: 'peach' },
+  { title: 'A little golden hour', category: 'Hair', image: salonImages.bridal, tone: 'sand' },
+  { title: 'A moment for the eyes', category: 'Bridal', image: salonImages.bridal, tone: 'plum' },
+  { title: 'Healthy skin ritual', category: 'Skin & Nails', image: salonImages.bridal, tone: 'sage' },
+  { title: 'The finishing touch', category: 'Makeup', image: salonImages.bridal, tone: 'berry' },
+  { title: 'Made for the aisle', category: 'Bridal', image: salonImages.bridal, tone: 'gold' },
+  { title: 'Shine, your way', category: 'Hair', image: salonImages.bridal, tone: 'cocoa' },
+] as const
+
+export const offerItems = [
+  { title: 'Hair care & styling', image: salonImages.hairOffer, alt: 'Cuts and Curves hair offer artwork' },
+  { title: 'Salon favourites', image: salonImages.offer, alt: 'Cuts and Curves special offer artwork' },
+  { title: 'Skin care', image: salonImages.skinOffer, alt: 'Cuts and Curves skin offer artwork' },
 ] as const
 
 export const reviews = [
