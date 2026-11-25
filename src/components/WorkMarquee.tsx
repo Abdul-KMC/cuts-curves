@@ -3,12 +3,12 @@ import { useState } from 'react'
 import { salonImages } from '../data'
 
 const looks = [
-  ['01', 'Bridal HD makeovers', salonImages.bridal],
-  ['02', 'Airbrush artistry', salonImages.hero],
-  ['03', 'Balayage, beautifully', salonImages.bridal],
-  ['04', 'Keratin shine', salonImages.hero],
-  ['05', 'The bridal updo', salonImages.bridal],
-  ['06', 'Soft-glam moments', salonImages.hero],
+  ['01', 'A bride in her moment', salonImages.bridePortrait],
+  ['02', 'The bridal glow', salonImages.bridal],
+  ['03', 'Soft curls, softly styled', salonImages.curlsUpdo],
+  ['04', 'A little golden hour', salonImages.curls],
+  ['05', 'Wedding-day grooming', salonImages.groomStyling],
+  ['06', 'Henna, drawn by hand', salonImages.henna],
 ] as const
 
 function MarqueeCard({ item }: { item: typeof looks[number] }) {

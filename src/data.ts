@@ -48,20 +48,23 @@ const galleryImage = (filename: string) => `/images/gallery/${encodeURIComponent
 export const salonImages = {
   hero: galleryImage('cuts&curves hero_image.jpeg'),
   bridal: galleryImage('bride work.jpeg'),
+  bridePortrait: galleryImage('bride.png'),
+  curlsUpdo: galleryImage('curls (2).png'),
+  curls: galleryImage('curls.png'),
+  groomStyling: galleryImage('gorrm_grooming.png'),
+  henna: galleryImage('henna design.png'),
   hairOffer: galleryImage('cuts&curves offer.jpeg'),
   offer: galleryImage('discount.jpeg'),
   skinOffer: galleryImage("mother's day skin offer.jpeg"),
 }
 
 export const galleryItems = [
-  { title: 'The bridal glow', category: 'Bridal', image: salonImages.bridal, tone: 'rose' },
-  { title: 'Soft glam, all day', category: 'Makeup', image: salonImages.bridal, tone: 'peach' },
-  { title: 'A little golden hour', category: 'Hair', image: salonImages.bridal, tone: 'sand' },
-  { title: 'A moment for the eyes', category: 'Bridal', image: salonImages.bridal, tone: 'plum' },
-  { title: 'Healthy skin ritual', category: 'Skin & Nails', image: salonImages.bridal, tone: 'sage' },
-  { title: 'The finishing touch', category: 'Makeup', image: salonImages.bridal, tone: 'berry' },
-  { title: 'Made for the aisle', category: 'Bridal', image: salonImages.bridal, tone: 'gold' },
-  { title: 'Shine, your way', category: 'Hair', image: salonImages.bridal, tone: 'cocoa' },
+  { title: 'A bride in her moment', category: 'Bridal', image: salonImages.bridePortrait, tone: 'rose' },
+  { title: 'The bridal glow', category: 'Makeup', image: salonImages.bridal, tone: 'peach' },
+  { title: 'A little golden hour', category: 'Hair', image: salonImages.curls, tone: 'sand' },
+  { title: 'Soft curls, softly styled', category: 'Hair', image: salonImages.curlsUpdo, tone: 'plum' },
+  { title: 'Wedding-day grooming', category: 'Hair', image: salonImages.groomStyling, tone: 'cocoa' },
+  { title: 'Henna, drawn by hand', category: 'Bridal', image: salonImages.henna, tone: 'gold' },
 ] as const
 
 export const offerItems = [
