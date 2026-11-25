@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import WorkMarquee from './components/WorkMarquee'
 import Hero from './components/Hero'
 import ServicesSection from './components/ServicesSection'
+import OffersSection from './components/OffersSection'
 import BridalCard from './components/BridalCard'
 import WhatsAppBookingModal from './components/WhatsAppBookingModal'
 import Gallery from './components/Gallery'
@@ -30,6 +31,7 @@ export default function App() {
       <main>
         <Hero onBook={openBooking} />
         <ServicesSection selected={selectedServices} onToggle={toggleService} onBook={openBooking} />
+        <OffersSection />
         <BridalCard />
         <Gallery />
         <Reviews />

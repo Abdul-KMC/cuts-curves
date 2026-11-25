@@ -2,6 +2,10 @@
 
 Replace the image files below with your own salon photography. Keep each filename exactly as written (including the `.jpg` extension) so the website can find it. Use landscape photos for the showcase and portrait / editorial photos for the hero and portfolio. Images are loaded from these local paths; if an image is missing, a soft coordinated gradient is shown instead.
 
+## Images currently in use
+
+The collage named for the hero (`gallery/cuts&curves hero_image.jpeg`) is used in the hero. The bridal portrait (`gallery/bride work.jpeg`) is repeated in the showcase and gallery until service-specific photos are available. The three offer artworks (`gallery/cuts&curves offer.jpeg`, `gallery/discount.jpeg`, and `gallery/mother's day skin offer.jpeg`) appear in the offers preview. Their dates, prices and terms may have expired; the page asks visitors to confirm current offers with the salon.
+
 ## Main hero
 
 - `hero-bridal.jpg` — large bridal portrait used in the homepage hero.

@@ -1,6 +1,7 @@
 import { ArrowDown, ArrowUpRight, Sparkles, Star } from 'lucide-react'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { salonImages } from '../data'
 
 export default function Hero({ onBook }: { onBook: () => void }) {
   const [imageFailed, setImageFailed] = useState(false)
@@ -17,7 +18,7 @@ export default function Hero({ onBook }: { onBook: () => void }) {
         <div className="hero-footnote"><span><Sparkles size={14} /> Thoughtful beauty, made personal</span><span className="hero-footnote-rule" /><span>Rajendra Nagar, Lucknow</span></div>
       </motion.div>
       <motion.div className={`hero-visual ${imageFailed ? 'image-missing' : ''}`} initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7, delay: 0.15 }}>
-        {!imageFailed && <img className="hero-image" src="/images/hero-bridal.jpg" alt="Bridal beauty and makeup by Cuts and Curves" onError={() => setImageFailed(true)} />}
+        {!imageFailed && <img className="hero-image" src={salonImages.hero} alt="Cuts and Curves bridal and beauty portfolio" onError={() => setImageFailed(true)} />}
         <div className="hero-image-label"><span>THE BRIDAL EDIT</span><span>VOL. 01 — LUCKNOW</span></div>
         <div className="rating-badge glass-card"><span className="rating-icon"><Star size={17} fill="currentColor" /></span><span><strong>4.9 <span>★</span></strong><small>5,000+ happy clients</small></span><i>Google</i></div>
         <div className="hero-stamp"><span>BEAUTY</span><span>WITH</span><span>INTENTION</span></div>
